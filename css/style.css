@@ -1,8 +1,75 @@
 :root {
     /* color-scheme: dark light; */
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-800: 800;
+
+    --fs-32: 2rem;
+    --fs-18: 1.25rem;
+    --fs-24: 1.5rem;
+    --fs-14: 0.875rem;
+    /* the pokeball not bold text  and footer and menu*/
+    --fs-16: 1rem;
+    /* body  */
+    --fs-12: 0.75rem;
+    /* menu size is fix everything else is bigger by 50% so maybe .5em?*/
 }
 
-body {}
+/* font weight  */
+.fw-800 {
+    font-weight: var(--fw-800);
+}
+
+.fw-600 {
+    font-weight: var(--fw-600);
+}
+
+.fw-400 {
+    font-weight: var(--fw-400);
+}
+
+@media (max-width: 50em) {
+    h1 {
+        font-size: var(--fs-32);
+    }
+
+    h2 {
+        font-size: var(--fs-24);
+    }
+
+    h3 {
+        font-size: var(--fs-18);
+    }
+
+    p {
+        font-size: var(--fs-16);
+    }
+}
+
+nav {
+    font-size: var(--fs-14);
+}
+
+.footer-top {
+    font-size: var(--fs-12);
+}
+
+.footer-top li {
+    font-size: var(--fs-14);
+}
+
+/* // font family 
+Inter 
+-800
+h1
+-600
+h2, h3
+-400
+p
+*/
+body {
+    font-family: 'Inter', sans-serif;
+}
 
 /* // nav  */
 .logo img {
@@ -41,6 +108,7 @@ body {}
         height: 15rem;
         background-size: 100%;
     }
+
 }
 
 .hero {
@@ -73,15 +141,36 @@ body {}
     .hero-action a div {
         display: flex;
     }
-
 }
 
 .hero-action a {
     font-size: 1.5rem;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* // images sizes  */
 .hero-action a img {
     max-width: 3rem;
+}
+
+.stats-icon img {
+    max-width: 3.5rem;
+}
+
+.community img {
+    max-width: 15rem;
+}
+
+.community a img {
+    max-width: 3.5rem;
+}
+
+.community a p+img {
+    max-width: 1.5rem;
 }
 
 /* @media (prefers-color-scheme: dark) {
