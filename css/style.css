@@ -4,6 +4,86 @@
 
 body {}
 
+/* // nav  */
+.logo img {
+    max-width: 1.5rem;
+}
+
+/* main  */
+@media (max-width: 50em) {
+    .hero-1 {
+        background-image: url("../images/hero1.jpg");
+        background-repeat: no-repeat;
+        max-width: 100%;
+        height: 15rem;
+        background-size: 100%;
+        grid-row: 1/2;
+    }
+
+    .hero-content {
+        grid-row: 2/3;
+    }
+
+    .hero-2 {
+        background-image: url("../images/hero2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        height: 15rem;
+        background-size: 100%;
+    }
+
+    .hero-3 {
+        background-image: url("../images/hero3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        height: 15rem;
+        background-size: 100%;
+    }
+}
+
+.hero {
+    display: grid;
+}
+
+@media (min-width: 50em) {
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-illustration {
+        background-image: url("../images/heroIMG.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
+        height: 120vh;
+        grid-column: 2/2;
+        border-radius: 30% 0 0 0;
+    }
+
+    .hero-content {
+        justify-self: end;
+        padding-top: 7.5rem;
+        max-width: calc(1268px/2);
+        margin-left: 1.25rem;
+    }
+
+    .hero-action a div {
+        display: flex;
+    }
+
+}
+
+.hero-action a {
+    font-size: 1.5rem;
+}
+
+.hero-action a img {
+    max-width: 3rem;
+}
+
 /* @media (prefers-color-scheme: dark) {
     body {
         background-color: #202223;
