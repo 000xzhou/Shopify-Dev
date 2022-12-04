@@ -4,46 +4,41 @@
     --fw-600: 600;
     --fw-800: 800;
 
+    --fs-48: 3rem;
     --fs-32: 2rem;
-    --fs-18: 1.25rem;
     --fs-24: 1.5rem;
-    --fs-14: 0.875rem;
-    /* the pokeball not bold text  and footer and menu*/
+    --fs-20: 1.25rem;
+    --fs-18: 1.125rem;
     --fs-16: 1rem;
-    /* body  */
+    --fs-14: 0.875rem;
     --fs-12: 0.75rem;
-    /* menu size is fix everything else is bigger by 50% so maybe .5em?*/
 }
 
-/* font weight  */
-.fw-800 {
-    font-weight: var(--fw-800);
+/* font size  */
+h1 {
+    font-size: var(--fs-32);
 }
 
-.fw-600 {
-    font-weight: var(--fw-600);
+h2 {
+    font-size: var(--fs-24);
 }
 
-.fw-400 {
-    font-weight: var(--fw-400);
+h3,
+.community-text,
+.hero-action a {
+    font-size: var(--fs-18);
 }
 
-@media (max-width: 50em) {
-    h1 {
-        font-size: var(--fs-32);
-    }
+p {
+    font-size: var(--fs-16);
+}
 
-    h2 {
-        font-size: var(--fs-24);
-    }
+.community-list-d {
+    font-size: var(--fs-14);
+}
 
-    h3 {
-        font-size: var(--fs-18);
-    }
-
-    p {
-        font-size: var(--fs-16);
-    }
+.logo {
+    font-size: var(--fs-16);
 }
 
 nav {
@@ -58,25 +53,144 @@ nav {
     font-size: var(--fs-14);
 }
 
-/* // font family 
-Inter 
--800
-h1
--600
-h2, h3
--400
-p
-*/
+@media (min-width: 50em) {
+    .hero {
+        font-size: var(--fs-48);
+    }
+
+    h2 {
+        font-size: var(--fs-32);
+    }
+
+    h3,
+    .community-text,
+    .hero-action a {
+        font-size: var(--fs-20);
+    }
+}
+
+/* font weight */
+html,
 body {
+    margin: 0;
     font-family: 'Inter', sans-serif;
 }
 
-/* // nav  */
-.logo img {
-    max-width: 1.5rem;
+h1 {
+    font-weight: var(--fw-800);
 }
 
-/* main  */
+h2,
+h3,
+.hero-action,
+.store-stats span,
+.community-list,
+.footer-sub-head {
+    font-weight: var(--fw-600);
+}
+
+p {
+    font-weight: var(--fw-400);
+}
+
+/* // images sizes  */
+.logo img {
+    max-width: 1.8rem;
+}
+
+.hero-action a img {
+    max-width: 3rem;
+}
+
+.stats-icon img {
+    max-width: 3.5rem;
+}
+
+.community img {
+    max-width: 15rem;
+}
+
+.community a img {
+    max-width: 3.5rem;
+}
+
+.community a p+img {
+    max-width: 1rem;
+}
+
+.search-area img {
+    max-width: 1.2rem;
+}
+
+.toggle-screen-btn img {
+    max-width: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+button,
+.search-area {
+    cursor: pointer;
+}
+
+/* nav area =============================================================*/
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu-toggle button,
+.toggle-screen-btn {
+    border: 0;
+}
+
+@media (max-width: 50em) {
+    .nav-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .search-area {
+        display: flex;
+        position: relative;
+    }
+
+    .search-input {
+        opacity: 0;
+    }
+
+    .search-area img {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .nav-ul-left,
+    .logo-xl,
+    .nav-ul-right {
+        display: none;
+    }
+}
+
+/* main area =============================================================*/
+.hero {
+    display: grid;
+}
+
 @media (max-width: 50em) {
     .hero-1 {
         background-image: url("../images/hero1.jpg");
@@ -111,9 +225,6 @@ body {
 
 }
 
-.hero {
-    display: grid;
-}
 
 @media (min-width: 50em) {
     .hero {
@@ -143,47 +254,19 @@ body {
     }
 }
 
-.hero-action a {
-    font-size: 1.5rem;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* // images sizes  */
-.hero-action a img {
-    max-width: 3rem;
-}
-
-.stats-icon img {
-    max-width: 3.5rem;
-}
-
-.community img {
-    max-width: 15rem;
-}
-
-.community a img {
-    max-width: 3.5rem;
-}
-
-.community a p+img {
-    max-width: 1.5rem;
-}
-
-/* @media (prefers-color-scheme: dark) {
-    body {
-        background-color: #202223;
-        color: #f4f6ff;
-    }
-} */
-
 /* 
+@media (prefers-color-scheme: dark) {
+
+    .social img,
+    .community a p+img {
+        filter: invert(1);
+    }
+}
+
 @media (prefers-color-scheme: light) {
-    body {
-        background-color: black;
-        color: white;
+
+    .social img,
+    .community a p+img {
+        filter: invert(0);
     }
 } */

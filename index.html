@@ -20,25 +20,27 @@
     <div class="body-wrapper">
         <!-- nav start  -->
         <nav>
-            <div>
+            <div class="nav-wrapper">
                 <div class="menu-toggle">
                     <button>
                         <img src="images/menu.svg" alt="menu">
                     </button>
                     <div class="logo">
                         <div><a href="#"><img src="images/fav.png" alt="logo"></a></div>
-                        <div>.dev</div>
+                        <div>.poke</div>
                     </div>
                 </div>
-                <div class="logo">
+                <div class="logo-xl">
                     <button>
                         <img src="images/close.svg" alt="menu">
                     </button>
-                    <div><a href="#"><img src="images/fav.png" alt="logo"></a></div>
-                    <div>.dev</div>
+                    <div class="logo">
+                        <div><a href="#"><img src="images/fav.png" alt="logo"></a></div>
+                        <div>.poke</div>
+                    </div>
                 </div>
                 <div>
-                    <div>
+                    <div class="nav-ul-left">
                         <ul>
                             <li><a href="#">Apps</a></li>
                             <li><a href="#">Themes</a></li>
@@ -47,10 +49,21 @@
                             <li><a href="#">APIs and references</a></li>
                         </ul>
                     </div>
-                    <div><input type="text" placeholder="search"><button>/</button></div>
+                    <div class="search-area">
+                        <img src="images/search-icon.svg" alt="search">
+                        <div class="search-input">
+                            <input type="text" placeholder="search">
+                            <button>/</button>
+                        </div>
+                    </div>
                     <div>
-                        <ul>
-                            <li><button>moon</button></li>
+                        <ul class="nav-ul-right">
+                            <li>
+                                <button class="toggle-screen-btn">
+                                    <img src="images/moon.svg" alt="">
+                                    <img src="images/sun.svg" alt="">
+                                </button>
+                            </li>
                             <li><a href="#">Log in</a></li>
                             <li><a href="#">Sign up</a></li>
                         </ul>
@@ -120,25 +133,25 @@
                                 <a href="#">
                                     <div>
                                         <div><img src="images/pic1.png" alt="Apps"></div>
-                                        <div>Apps</div>
+                                        <div>Vaporeon</div>
                                     </div>
                                 </a>
                                 <a href="#">
                                     <div>
                                         <div><img src="images/pic2.png" alt="Themes"></div>
-                                        <div>Themes</div>
+                                        <div>Sylveon</div>
                                     </div>
                                 </a>
                                 <a href="#">
                                     <div>
                                         <div><img src="images/pic3.png" alt="Storefronts"></div>
-                                        <div>Storefront</div>
+                                        <div>Jolteon</div>
                                     </div>
                                 </a>
                                 <a href="#">
                                     <div>
                                         <div><img src="images/pic4.png" alt="Marketplaces"></div>
-                                        <div>Marketplaces</div>
+                                        <div>Flareon</div>
                                     </div>
                                 </a>
                             </div>
@@ -178,7 +191,7 @@
                             <img src="images/statsIcon1.png" alt="statsIcon">
                         </div>
                         <div>
-                            <span class="bold">$12.5B USD</span>
+                            <span>$12.5B USD</span>
                             Revenue generated from the Shopify ecosystem (2020)
                         </div>
                     </div>
@@ -186,13 +199,13 @@
                         <div class="stats-icon">
                             <img src="images/statsIcon2.png" alt="statsIcon">
                         </div>
-                        <span class="bold">3 in 4 merchants use apps</span>
+                        <span>3 in 4 merchants use apps</span>
                     </div>
                     <div>
                         <div class="stats-icon">
                             <img src="images/statsIcon3.png" alt="statsIcon">
                         </div>
-                        <span class="bold">Average number of apps installed per merchant</span>
+                        <span>Average number of apps installed per merchant</span>
                     </div>
                 </div>
             </section>
@@ -200,7 +213,7 @@
                 <div>
                     <div><img src="images/community.png" alt="community"></div>
                     <div>
-                        <h2>Join a community of builders</h2>
+                        <h2 class="community-text">Join a community of builders</h2>
                     </div>
                 </div>
                 <a href="http://retroredrawn.com/">
@@ -209,10 +222,11 @@
                     </div>
                     <div>
                         <div>
-                            <p>Retroredrawn</p>
-                            <img src="images/right.png" alt="right arrow">
+                            <p class="community-list">Retroredrawn</p>
+                            <img src="images/right-arrow.svg" alt="right arrow">
                         </div>
-                        <p>Remakes and demakes of your favorite games, by a gathering of picel arists</p>
+                        <p class="community-list-d">Remakes and demakes of your favorite games, by a gathering of picel
+                            arists</p>
                     </div>
                 </a>
                 <a href="https://twitter.com/jooniverz">
@@ -221,10 +235,10 @@
                     </div>
                     <div>
                         <div>
-                            <p>@jooniverz on Twitter</p>
-                            <img src="images/right.png" alt="right arrow">
+                            <p class="community-list">@jooniverz on Twitter</p>
+                            <img src="images/right-arrow.svg" alt="right arrow">
                         </div>
-                        <p>Artist of Route 24 Part 4 of the Kanto map I used</p>
+                        <p class="community-list-d">Artist of Route 24 Part 4 of the Kanto map I used</p>
                     </div>
                 </a>
                 <a href="https://twitter.com/KevinJPowell">
@@ -233,10 +247,11 @@
                     </div>
                     <div>
                         <div>
-                            <p>@KevinJPowell on Twitter</p>
-                            <img src="images/right.png" alt="right arrow">
+                            <p class="community-list">@KevinJPowell on Twitter</p>
+                            <img src="images/right-arrow.svg" alt="right arrow">
                         </div>
-                        <p>Amazing css god. Making your part of the internet a little bit more awesome</p>
+                        <p class="community-list-d">Amazing css god. Making your part of the internet a little bit more
+                            awesome</p>
                     </div>
                 </a>
                 <a href="https://www.pngwing.com/">
@@ -245,10 +260,10 @@
                     </div>
                     <div>
                         <div>
-                            <p>PNGWING</p>
-                            <img src="images/right.png" alt="right arrow">
+                            <p class="community-list">PNGWING</p>
+                            <img src="images/right-arrow.svg" alt="right arrow">
                         </div>
-                        <p>Transparent background png images for designers</p>
+                        <p class="community-list-d">Transparent background png images for designers</p>
                     </div>
                 </a>
                 <a href="https://icons8.com/">
@@ -257,22 +272,23 @@
                     </div>
                     <div>
                         <div>
-                            <p>Icons8</p>
-                            <img src="images/right.png" alt="right arrow">
+                            <p class="community-list">Icons8</p>
+                            <img src="images/right-arrow.svg" alt="right arrow">
                         </div>
-                        <p>Icons, illustrations, photos, music, and design tools</p>
+                        <p class="community-list-d">Icons, illustrations, photos, music, and design tools, but not full
+                            free</p>
                     </div>
                 </a>
-                <a href="#">
+                <a href="https://iconmonstr.com/">
                     <div>
                         <img src="images/community6.png" alt="community">
                     </div>
                     <div>
                         <div>
-                            <p>ShopifyDevs Discord servers</p>
-                            <img src="images/right.png" alt="right arrow">
+                            <p class="community-list">iconmonstr</p>
+                            <img src="images/right-arrow.svg" alt="right arrow">
                         </div>
-                        <p>Chat with other shopify devlopers</p>
+                        <p class="community-list-d">Free simple icons for your next project</p>
                     </div>
                 </a>
                 <a href="#">
@@ -281,10 +297,10 @@
                     </div>
                     <div>
                         <div>
-                            <p>Shopify Partners blog</p>
-                            <img src="images/right.png" alt="right arrow">
+                            <p class="community-list">Shopify Partners blog</p>
+                            <img src="images/right-arrow.svg" alt="right arrow">
                         </div>
-                        <p>Educational resources and product previews</p>
+                        <p class="community-list-d">Educational resources and product previews</p>
                     </div>
                 </a>
             </section>
@@ -294,14 +310,14 @@
         <footer>
             <div class="footer-top">
                 <div class="news">
-                    <div>News and updates</div>
+                    <div class="footer-sub-head">News and updates</div>
                     <ul>
                         <li><a href="#">Developer changelog</a></li>
                         <li><a href="#">Shopify status</a></li>
                     </ul>
                 </div>
                 <div class="community">
-                    <div>community</div>
+                    <div class="footer-sub-head">community</div>
                     <ul>
                         <li><a href="#">Developer forums</a></li>
                         <li><a href="#">Devs Discord</a></li>
@@ -309,7 +325,7 @@
                     </ul>
                 </div>
                 <div class="events">
-                    <div>Events</div>
+                    <div class="footer-sub-head">Events</div>
                     <ul>
                         <li><a href="#">Unite</a></li>
                         <li><a href="#">Meetups</a></li>
@@ -317,7 +333,7 @@
                     </ul>
                 </div>
                 <div class="blogs">
-                    <div>blogs</div>
+                    <div class="footer-sub-head">blogs</div>
                     <ul>
                         <li><a href="#">Partner blog</a></li>
                         <li><a href="#">Engineering blog</a></li>
@@ -326,7 +342,7 @@
                 </div>
                 <!-- social start -->
                 <div class="social">
-                    <div>social</div>
+                    <div class="footer-sub-head">social</div>
                     <ul>
                         <li>
                             <a href="#">
@@ -350,7 +366,7 @@
                 </div>
                 <!-- social end -->
                 <div class="legal">
-                    <div>legal</div>
+                    <div class="footer-sub-head">legal</div>
                     <ul>
                         <li><a href="#">Terms of Service</a></li>
                         <li><a href="#">API Terms of Service</a></li>
