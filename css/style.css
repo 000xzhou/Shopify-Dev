@@ -12,6 +12,8 @@
     --fs-16: 1rem;
     --fs-14: 0.875rem;
     --fs-12: 0.75rem;
+
+    --clr-border: hsl(210, 7%, 84%);
 }
 
 /* font size  */
@@ -150,6 +152,12 @@ button,
 }
 
 /* nav area =============================================================*/
+nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -312,7 +320,7 @@ button,
 }
 
 .hero-action-block {
-    border: 1px solid #D2D5D8;
+    border: 1px solid var(--clr-border);
     border-radius: .5rem;
     display: flex;
     align-items: center;
@@ -379,20 +387,63 @@ button,
 .community {
     display: grid;
     gap: 1em;
+    margin-inline: 1rem;
+    padding-bottom: 3.75em;
 }
 
 .community h2 {
     margin: 0;
 }
 
-.community a {
-    background-color: rgba(74, 153, 104, 0.664);
+.community-box {
     display: flex;
+    align-items: center;
 }
 
-.community a div div {
-    background-color: rgba(74, 153, 104, 0.664);
+.community-box p {
+    margin: 0;
+}
+
+.community-border {
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1px solid var(--clr-border);
+}
+
+.join-community {
+    padding: 1rem 1rem 3rem;
+    border-radius: .5rem;
+}
+
+/* footer ==================  */
+footer {
+    padding-block: 3.75em;
+    margin-inline: 1rem;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-box {
+    padding-block: 2rem;
+}
+
+.footer-top ul {
+    padding: 0;
+}
+
+.social-footer-ul-list li a {
     display: flex;
+    gap: .5rem;
+}
+
+.footer-nav-ul-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem 1rem;
 }
 
 /* 
