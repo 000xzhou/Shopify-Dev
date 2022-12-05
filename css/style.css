@@ -211,6 +211,10 @@ button,
         display: flex;
     }
 
+    .menu-toggle-right .logo div img {
+        padding-left: 1rem;
+    }
+
     .search-icon-only-btn img {
         height: 1.5rem;
         width: 1.5rem;
