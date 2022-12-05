@@ -13,7 +13,7 @@
     --fs-14: 0.875rem;
     --fs-12: 0.75rem;
 
-    --clr-action-border: hsl(210, 7%, 84%);
+    --clr-action-border: ;
     --clr-background: white;
     --clr-foreground: hsl(190, 19%, 6%);
     --filter-svg: invert(0);
@@ -21,6 +21,7 @@
     --store-stats-border: 3px solid black;
     --store-stats-box-shadow: .5rem .5rem;
     --store-stats-border-radius: 0;
+    --clr-border: 1px solid hsl(210, 7%, 84%);
 }
 
 
@@ -32,7 +33,7 @@
         --filter-svg: invert(1);
         --clr-link: hsl(226, 82%, 85%);
         --clr-box-bg: hsl(187, 18%, 10%);
-        /* --store-stats-border: 1px solid hsla(114, 94%, 74%, .1); */
+        --store-stats-border: 1px solid hsla(114, 94%, 74%, .1);
         --store-stats-box-shadow: none;
         --store-stats-border-radius: .5rem;
         --clr-footerbot-box-bg: hsl(191, 15%, 15%);
@@ -257,7 +258,7 @@ button,
     background-color: transparent;
 }
 
-@media (max-width: 80em) {
+@media (max-width: 60em) {
     .nav {
         display: flex;
         align-items: center;
@@ -343,6 +344,37 @@ button,
     }
 }
 
+@media (min-width: 60em) {
+
+    .menu-toggle,
+    .menu-down,
+    .logo-xl button {
+        display: none;
+    }
+
+    .search-area {
+        display: none;
+    }
+
+    .nav-wrapper,
+    .inner-nav-wrapper,
+    .nav-ul-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .inner-nav-wrapper {
+        flex: 1;
+        justify-content: space-between;
+    }
+
+    .nav-ul-left ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+}
+
 /* main area =============================================================*/
 .hero {
     display: grid;
@@ -410,6 +442,14 @@ button,
 }
 
 @media (max-width: 40em) {
+    .join-community {
+        margin-top: 1rem;
+    }
+
+    .community {
+        margin-inline: 1rem;
+    }
+
     .head {
         padding-inline: 1rem;
     }
@@ -427,11 +467,39 @@ button,
     }
 }
 
+.community-list-d {
+    margin-bottom: 0
+}
+
 @media (min-width: 40em) and (max-width: 80em) {
-    .head {
+
+    .head,
+    .hero-content-container,
+    .hero-action h3,
+    .hero-action-blocks,
+    .community {
         padding-inline: 3.5rem;
         max-width: 40rem;
         margin: auto;
+    }
+
+    .hero-action h3 {
+        padding-block: 1rem;
+    }
+
+    .store {
+        margin: 1rem;
+    }
+
+    .store-stats {
+        margin: 0 1rem 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .community {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
     }
 
     .hero-1 {
@@ -447,11 +515,21 @@ button,
     }
 }
 
-/* @media (min-width: 40em) and (max-width: 60em) {} */
+@media (min-width: 40em) and (max-width: 60em) {
+    .hero-action-blocks {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
 
 @media (min-width: 60em) and (max-width: 80em) {
     h1 {
         font-size: var(--fs-48);
+        margin-bottom: 0;
+    }
+
+    .hero-action-blocks {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -538,7 +616,7 @@ button,
 
 /* store-stats ===========  */
 .store-stats {
-    border: var(--clr-border);
+    border: var(--store-stats-border);
     box-shadow: var(--store-stats-box-shadow);
     padding: 2em 2em 1em;
     border-radius: var(--store-stats-border-radius);
@@ -565,7 +643,6 @@ button,
 .community {
     display: grid;
     gap: 1em;
-    margin-inline: 1rem;
     padding-bottom: 3.75em;
 }
 
@@ -582,28 +659,41 @@ button,
     margin: 0;
 }
 
-.community-border {
-    padding: 1rem;
-    border-radius: .5rem;
+.community a {
     border: var(--clr-border);
     background-color: var(--clr-box-bg);
+    border-radius: .5rem;
+}
+
+.community-border {
+    padding: 1rem;
 }
 
 .join-community {
     padding: 2rem 1rem;
     border-radius: .5rem;
-    margin-top: 1rem;
 }
 
 /* footer ==================  */
-footer {}
-
 .footer-top {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     background-color: var(--clr-box-bg);
-    padding-inline: 1rem;
+    padding-inline: 2rem;
     padding-block: 5.5em;
+    border-radius: 1rem;
+}
+
+@media (max-width: 40em) {
+    .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 40em) and (max-width: 80em) {
+    .footer-top {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
 }
 
 .footer-box {
