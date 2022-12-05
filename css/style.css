@@ -197,6 +197,10 @@ p {
     filter: var(--filter-svg);
 }
 
+.logo-xl button img {
+    filter: var(--filter-svg);
+}
+
 .search-icon-only-btn {
     background-color: transparent;
 }
@@ -285,7 +289,8 @@ button,
         padding: .5rem 1rem;
         box-sizing: border-box;
         z-index: 10;
-        /* transform: translateX(0); */
+        /* transform: translateX(0);
+        transform: translateX(-100%); */
         display: none;
     }
 
@@ -370,73 +375,83 @@ button,
     }
 }
 
+.hero-1 {
+    background-image: url("../images/hero1.jpg");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-size: 100% 100%;
+    background-size: cover;
+    grid-row: 1/2;
+}
+
+.hero-2 {
+    background-image: url("../images/hero2.jpg");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-size: 100% 100%;
+    background-size: cover;
+}
+
+.hero-3 {
+    background-image: url("../images/hero3.jpg");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-size: 100% 100%;
+    background-size: cover;
+    margin-bottom: 2rem;
+}
+
+.head {
+    padding-block: 2rem;
+}
+
+.hero-content-container {
+    padding: .5rem 1rem;
+}
 
 @media (max-width: 40em) {
-    .hero-1 {
-        background-image: url("../images/hero1.jpg");
-        background-repeat: no-repeat;
-        max-width: 100%;
-        height: 15.25em;
-        background-size: 100% 100%;
-        background-size: cover;
-        grid-row: 1/2;
+    .head {
+        padding-inline: 1rem;
     }
 
-    .head {
-        padding: 2rem 1rem;
+    .hero-1 {
+        height: 20rem;
     }
 
     .hero-2 {
-        background-image: url("../images/hero2.jpg");
-        background-repeat: no-repeat;
-        max-width: 100%;
         height: 15.25rem;
-        background-size: 100% 100%;
-        background-size: cover;
-    }
-
-    .hero-content-container {
-        padding: .5rem 1rem;
     }
 
     .hero-3 {
-        background-image: url("../images/hero3.jpg");
-        background-repeat: no-repeat;
-        max-width: 100%;
         height: 15.25rem;
-        background-size: 100% 100%;
-        background-size: cover;
-        margin-bottom: 2rem;
     }
 }
 
 @media (min-width: 40em) and (max-width: 80em) {
+    .head {
+        padding-inline: 3.5rem;
+        max-width: 40rem;
+        margin: auto;
+    }
+
     .hero-1 {
-        background-image: url("../images/hero1.jpg");
-        background-repeat: no-repeat;
-        max-width: 100%;
-        height: 15.25em;
-        background-size: 100% 100%;
-        background-size: cover;
-        grid-row: 1/2;
+        height: 22.5rem;
     }
 
     .hero-2 {
-        background-image: url("../images/hero2.jpg");
-        background-repeat: no-repeat;
-        max-width: 100%;
-        height: 15.25rem;
-        background-size: 100% 100%;
-        background-size: cover;
+        height: 22.5rem;
     }
 
     .hero-3 {
-        background-image: url("../images/hero3.jpg");
-        background-repeat: no-repeat;
-        max-width: 100%;
-        height: 15.25rem;
-        background-size: 100% 100%;
-        background-size: cover;
+        height: 22.5rem;
+    }
+}
+
+/* @media (min-width: 40em) and (max-width: 60em) {} */
+
+@media (min-width: 60em) and (max-width: 80em) {
+    h1 {
+        font-size: var(--fs-48);
     }
 }
 
