@@ -641,8 +641,11 @@ button,
         background-size: cover;
         width: auto;
         grid-column: 2/2;
-        border-radius: 30% 0 0 0;
+        /* border-radius: 2rem 0 0 0; */
         margin: 3rem 1rem;
+        overflow: hidden;
+        -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 31%, 5% 23%);
+        clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 30%, 15% 13%);
     }
 
     .hero-content {
