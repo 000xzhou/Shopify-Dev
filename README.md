@@ -1,4 +1,4 @@
-#Learning
+# Learning
 - prefers-color-scheme
 - accessibility
 
