@@ -1,6 +1,6 @@
 #Learning
-#prefers-color-scheme
-#accessibility
+- prefers-color-scheme
+- accessibility
 
 
 # Accessibility
