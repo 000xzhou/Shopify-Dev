@@ -590,7 +590,6 @@ button,
 
     .sub-p-ul-nav[visibily-hidden="false"] {
         display: block;
-        background-color: var(--clr-background);
     }
 
     .sub-p-ul-nav[visibily-hidden="true"] {
@@ -605,6 +604,7 @@ button,
         padding: 1rem 0rem .5rem 0;
         z-index: 1;
         top: 1.5rem;
+        background-color: var(--clr-background);
     }
 
     .sub-p-ul-nav>li:last-child {
