@@ -2,9 +2,6 @@
 - prefers-color-scheme
 - accessibility
 
-
-# Accessibility
-https://youtu.be/YAqRQoN8ykI
-
-# Big Pokemon
-http://retroredrawn.com/
+# Resourses 
+- [youtube](https://youtu.be/YAqRQoN8ykI) - This helped me learn accessibility.
+- [artwork](http://retroredrawn.com/) - Found amazing maps.
