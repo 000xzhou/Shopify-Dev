@@ -590,6 +590,7 @@ button,
 
     .sub-p-ul-nav[visibily-hidden="false"] {
         display: block;
+        background-color: var(--clr-background);
     }
 
     .sub-p-ul-nav[visibily-hidden="true"] {
