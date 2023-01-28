@@ -1,4 +1,8 @@
+### Future development 
 
+- adding more static pages
+- adding login / signup form
+- add auth
 
 ### Built with
 
@@ -11,8 +15,8 @@
 
 ### What I learned
 
-- Adding animation for the hamburger menu. The menu does not disappear right away instead animated out.
-- Dark and light mode. I learn how to store the perfered dark or light mode in local storage. 
+- Adding animation for the hamburger menu display. 
+- Dark and light mode. with local storage
 - Accessibility. I learn why and how area-expanded / data-state / visibily-hidden work.
 
 ### Resourses 
