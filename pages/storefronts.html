@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/fav.png">
+
+    <title>Pokeify/Storefront</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/newStyle.css">
+    <script defer src="../app.js"></script>
+</head>
+
+<body>
+    <!-- nav start  -->
+    <nav class="nav">
+        <div class="menu-toggle" aria-controls="primary-nav-table">
+            <div class="menu-toggle-right">
+                <button class="nav-menu-toggle" aria-label="primary navigation" aria-expanded="false">
+                    <span class="sr-only">Open Menu</span>
+                    <img src="../images/menu.svg" alt="menu">
+                </button>
+                <a href="../index.html">
+                    <div class="logo">
+                        <div><img src="../images/fav.png" alt="logo"></div>
+                        <div>.poke</div>
+                    </div>
+                </a>
+            </div>
+            <button class="search-icon-only-btn">
+                <img src="../images/search-icon.svg" alt="search">
+            </button>
+        </div>
+        <div class="nav-wrapper" id="primary-nav-table" data-state="close">
+            <div class="logo-xl">
+                <button class="nav-menu-close" aria-label="primary navigation" aria-expanded="false">
+                    <span class="sr-only">Close Menu</span>
+                    <img src="../images/close.svg" alt="menu">
+                </button>
+                <a href="../index.html">
+                    <div class="logo">
+                        <div><img src="../images/fav.png" alt="logo"></div>
+                        <div>.poke</div>
+                    </div>
+                </a>
+            </div>
+            <div class="inner-nav-wrapper">
+                <div class="nav-ul-left">
+                    <button class="menu-down" aria-controls="primary-nav-list" aria-label="secondary navigation list"
+                        aria-expanded="false">
+                        <div class="secondary-menu">
+                            Menu <img class="rotate180" src="../images/arrow-down.svg" alt="menu-list">
+                        </div>
+                        <ul id="secondary-nav-list" class="secondary-nav-list" visibily-hidden="true">
+                            <li><a href="apps.html" target="_blank">Apps</a></li>
+                            <li><a href="themes.html" target="_blank">Themes</a></li>
+                            <li><a href="storefronts.html" target="_blank">Custom storefronts</a></li>
+                            <li><a href="marketplaces.html" target="_blank">Marketplaces</a></li>
+                            <li><a href="api.html" target="_blank">APIs and references</a>
+                                <ul class="sub-ul-nav">
+                                    <span>Starters</span>
+                                    <li>
+                                        <a href="bulbasaur.html" target="_blank" rel="noopener noreferrer">Bulbasaur</a>
+                                    </li>
+                                    <li>
+                                        <a href="charmander.html" target="_blank"
+                                            rel="noopener noreferrer">Charmander</a>
+                                    </li>
+                                    <li>
+                                        <a href="squirtle.html" target="_blank">Squirtle</a>
+                                    </li>
+                                    <span>Types</span>
+                                    <li>
+                                        <a href="grass.html" target="_blank" rel="noopener noreferrer">Grass</a>
+                                    </li>
+                                    <li>
+                                        <a href="fire.html" target="_blank" rel="noopener noreferrer">Fire</a>
+                                    </li>
+                                    <li>
+                                        <a href="water.html" target="_blank" rel="noopener noreferrer">Water</a>
+                                    </li>
+                                    <li>
+                                        <a href="api.html" target="_blank" rel="noopener noreferrer">View
+                                            all</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </button>
+                    <ul class="primary-nav-list">
+                        <li><a href="apps.html" target="_blank">Apps</a></li>
+                        <li><a href="themes.html" target="_blank">Themes</a></li>
+                        <li><a href="storefronts.html" target="_blank">Custom storefronts</a></li>
+                        <li><a href="marketplaces.html" target="_blank">Marketplaces</a></li>
+                        <!-- Start of API -->
+                        <li class="api-n-market" aria-controls="secondary-ul-list" aria-expanded="false"
+                            aria-label="APIs and reference list">
+                            <!-- It's not a hover so can't have them go somewhere else. Till I change it to hover -->
+                            <a href="#">APIs and references
+                                <img src="../images/caret-down-filled.svg" alt="market list"></a>
+                            <ul class="sub-p-ul-nav" visibily-hidden="true" id="secondary-ul-list">
+                                <li>
+                                    <div>Starters</div>
+                                    <ul class="sub-sub-ul">
+                                        <li>
+                                            <a href="bulbasaur.html" target="_blank"
+                                                rel="noopener noreferrer">Bulbasaur</a>
+                                        </li>
+                                        <li>
+                                            <a href="charmander.html" target="_blank"
+                                                rel="noopener noreferrer">Charmander</a>
+                                        </li>
+                                        <li>
+                                            <a href="squirtle.html" target="_blank">Squirtle</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div>Types</div>
+                                    <ul class="sub-sub-ul">
+                                        <li>
+                                            <a href="grass.html" target="_blank" rel="noopener noreferrer">Grass</a>
+                                        </li>
+                                        <li>
+                                            <a href="fire.html" target="_blank" rel="noopener noreferrer">Fire</a>
+                                        </li>
+                                        <li>
+                                            <a href="water.html" target="_blank" rel="noopener noreferrer">Water</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="api.html" target="_blank" rel="noopener noreferrer">View
+                                        all</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- End of API -->
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <div class="search-area">
+                        <img src="../images/search-icon.svg" alt="search">
+                        <div class="search-input">
+                            <input type="text" placeholder="search">
+                            <button type="submit">/</button>
+                        </div>
+                    </div>
+                    <ul class="nav-ul-right">
+                        <li>
+                            <button class="toggle-darklight" aria-label="Switch to dark theme">
+                                <img toggle-img src="../images/moon.svg" alt="dark">
+                            </button>
+                        </li>
+                        <li><a href="../auth/login.html">Log in</a></li>
+                        <li><a href="../auth/login.html">Sign up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- nav end  -->
+
+    <main class="coming-soon">
+        <div class="soon">
+            <div>Coming soon...</div>
+            <button class="go-back hvr-underline-from-left"><a href="../index.html" target="_blank"
+                    rel="noopener noreferrer">Go
+                    back</a></button>
+        </div>
+    </main>
+</body>
+
+</html>
