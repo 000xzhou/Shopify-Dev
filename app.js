@@ -1,7 +1,6 @@
 // toggle darkmode
 let darkMode = localStorage.getItem("darkMode")
 const darkModeToggle = document.querySelector(".toggle-darklight")
-
 const enableDarkMode = () => {
     document.body.classList.add("dark-mode")
     darkModeToggle.setAttribute("aria-label", "Switch to light mode")
