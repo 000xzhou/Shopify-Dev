@@ -1,4 +1,32 @@
 /* nav area =============================================================*/
+
+/* /  / svg */
+.search-area img {
+    max-width: 1.2rem;
+    -webkit-filter: var(--filter-svg);
+    filter: var(--filter-svg);
+
+}
+
+.menu-down img {
+    max-width: 1rem;
+    -webkit-filter: var(--filter-svg);
+    filter: var(--filter-svg);
+}
+
+
+.search-icon-only-btn img {
+    height: 1.5rem;
+    width: 1.5rem;
+    -webkit-filter: var(--filter-svg);
+    filter: var(--filter-svg);
+}
+
+.menu-toggle-right button img {
+    -webkit-filter: var(--filter-svg);
+    filter: var(--filter-svg);
+}
+
 .nav {
     position: sticky;
     top: 0;

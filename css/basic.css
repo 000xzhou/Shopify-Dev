@@ -1,0 +1,99 @@
+/* font size  */
+h1 {
+    font-size: var(--fs-32);
+}
+
+h2 {
+    font-size: var(--fs-24);
+}
+
+h3,
+a {
+    font-size: var(--fs-18);
+}
+
+p {
+    font-size: var(--fs-16);
+    line-height: 1.5rem;
+}
+
+.heading-p {
+    font-size: var(--fs-18);
+    line-height: 1.75rem;
+}
+
+.logo {
+    font-size: var(--fs-16);
+}
+
+nav {
+    font-size: var(--fs-14);
+}
+
+
+
+.bold {
+    font-weight: bold;
+}
+
+@media (min-width: 50em) {
+    .hero {
+        font-size: var(--fs-48);
+    }
+
+    h2 {
+        font-size: var(--fs-32);
+    }
+
+    h3,
+    a {
+        font-size: var(--fs-20);
+    }
+}
+
+/* font weight */
+h1 {
+    font-weight: var(--fw-800);
+}
+
+h2,
+h3 {
+    font-weight: var(--fw-600);
+}
+
+p {
+    font-weight: var(--fw-400);
+}
+
+/* // images sizes  */
+.logo img {
+    max-width: 1.8rem;
+}
+
+.toggle-darklight img {
+    max-width: 1.2rem;
+}
+
+.logo-xl button img {
+    -webkit-filter: var(--filter-svg);
+    filter: var(--filter-svg);
+}
+
+.search-icon-only-btn {
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+button,
+.search-area {
+    cursor: pointer;
+}
