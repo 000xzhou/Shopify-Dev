@@ -42,6 +42,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+
 }
 
 .menu-toggle {
@@ -74,6 +75,10 @@
 
 .menu-down {
     color: var(--clr-foreground);
+}
+
+.docs {
+    color: var(--clr-docs);
 }
 
 @media (max-width: 60em) {
@@ -575,4 +580,8 @@
     -ms-flex-align: center;
     align-items: center;
     gap: 1rem;
+}
+
+.logo-xl {
+    width: 10rem;
 }

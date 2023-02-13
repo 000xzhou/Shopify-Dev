@@ -1,0 +1,38 @@
+/* side bar menu */
+
+
+@media (max-width: 60em) {
+    .sidebar-menu-desktop {
+        display: none;
+    }
+}
+
+.sidebar-menu-desktop {
+    background-color: var(--clr-input-bg);
+    border-radius: 0.5rem;
+    float: left;
+    width: 20%;
+    height: 100%;
+    overflow: auto;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+
+
+.sidebar-menu {
+    width: 15rem;
+}
+
+
+.sidebar-item {
+    cursor: pointer;
+}
+
+.active-item {
+    background: var(--clr-background);
+}
+
+/* .inner-sidebar-list {
+    display: none;
+} */
