@@ -585,3 +585,78 @@
 .logo-xl {
     width: 10rem;
 }
+
+/* darklight animation  */
+.dark-mode .toggle-darklight img {
+    /* transform: rotate(-0.25turn); */
+    opacity: 1;
+    -webkit-animation-name: rising-sun;
+    animation-name: rising-sun;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+.toggle-darklight img {
+    -webkit-transition: -webkit-transform 250ms linear;
+    transition: -webkit-transform 250ms linear;
+    -o-transition: transform 250ms linear;
+    transition: transform 250ms linear;
+    transition: transform 250ms linear, -webkit-transform 250ms linear;
+    /* transform: rotate(0); */
+    opacity: .7;
+    -webkit-animation-name: hanging-moon;
+    animation-name: hanging-moon;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+.toggle-darklight img:hover,
+.toggle-darklight img:focus {
+    opacity: 1;
+}
+
+.toggle-darklight {
+    overflow: hidden;
+}
+
+@keyframes rising-sun {
+    from {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes hanging-moon {
+    from {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: .7;
+    }
+}
+
+@keyframes hanging-moon {
+    from {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: .7;
+    }
+}

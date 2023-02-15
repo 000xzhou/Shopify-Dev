@@ -7,9 +7,13 @@ h2 {
     font-size: var(--fs-24);
 }
 
+nav a {
+    font-size: var(--fs-14);
+}
+
 h3,
 a {
-    font-size: var(--fs-18);
+    font-size: var(--fs-16);
 }
 
 p {
@@ -17,38 +21,12 @@ p {
     line-height: 1.5rem;
 }
 
-.heading-p {
-    font-size: var(--fs-18);
-    line-height: 1.75rem;
-}
-
 .logo {
     font-size: var(--fs-16);
 }
 
-nav {
-    font-size: var(--fs-14);
-}
-
-
-
 .bold {
     font-weight: bold;
-}
-
-@media (min-width: 50em) {
-    .hero {
-        font-size: var(--fs-48);
-    }
-
-    h2 {
-        font-size: var(--fs-32);
-    }
-
-    h3,
-    a {
-        font-size: var(--fs-16);
-    }
 }
 
 /* font weight */
