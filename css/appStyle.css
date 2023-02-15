@@ -141,6 +141,8 @@ body {
 .hero {
     display: grid;
     background: var(--clr-box-bg);
+    border-radius: 0.5rem;
+
 }
 
 a p {
@@ -155,6 +157,12 @@ a p {
     object-fit: contain;
     width: 100%;
     height: 100%;
+    /* border-radius: 0.5rem; */
+}
+
+img {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
 }
 
 .mini-icon {
@@ -188,6 +196,7 @@ a p {
     }
 }
 
+/* what's new action  */
 .action-block {
     border: 1px solid var(--clr-border);
     border-radius: .5rem;
@@ -198,7 +207,9 @@ a p {
     -ms-flex-align: center;
     align-items: center;
     gap: .5rem;
-    padding: 1rem;
+    /* padding: 1rem; */
+    background-color: var(--clr-box-bg);
+
 }
 
 .block-img {
@@ -207,8 +218,6 @@ a p {
     background-size: cover;
 }
 
-
-/* ////// hover  */
 .action-block:hover {
     -webkit-transform: translateY(-.2rem);
     -ms-transform: translateY(-.2rem);
@@ -217,6 +226,30 @@ a p {
     box-shadow: 0 .2rem 0 0 var(--clr-btn-hover);
 }
 
+.new-action {
+    display: grid;
+    gap: 1rem;
+}
+
+@media (min-width: 40rem) and (max-width: 60rem) {
+    .new-action {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 60rem) {
+    .new-action {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+/* level up  */
+.level-up,
+.start-selling {
+    background-color: var(--clr-box-bg);
+    border-radius: 0.5rem;
+}
 
 
 
