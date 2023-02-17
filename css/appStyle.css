@@ -110,12 +110,21 @@ body {
 @media (max-width: 60rem) {
     .main-content {
         width: 100%;
+
+    }
+
+    .hero-header {
+        font-size: var(--fs-32);
     }
 }
 
 @media (min-width: 60rem) {
     .main-content {
         padding: 1rem;
+    }
+
+    .hero-header {
+        font-size: var(--fs-48);
     }
 }
 
@@ -131,6 +140,8 @@ body {
     }
 }
 
+
+
 .sections {
     max-width: 1300px;
     margin: auto;
@@ -144,14 +155,19 @@ body {
 .hero-header {
     color: var(--clr-link);
     width: var(--fw-800);
-    font-size: var(--fs-32);
 }
+
 
 .hero {
     display: grid;
     background: var(--clr-box-bg);
     border-radius: 0.5rem;
+    column-gap: 1rem;
+}
 
+.hero-button {
+    max-width: 70%;
+    padding-bottom: 3rem;
 }
 
 a p {
@@ -195,6 +211,7 @@ img {
     .hero-img-container {
         grid-column: 2/3;
         grid-row: 1/2;
+        align-self: end;
     }
 }
 
@@ -202,10 +219,17 @@ img {
     .hero-img-container {
         grid-column: 2/3;
         grid-row: 1/3;
+        align-self: end;
     }
 }
 
 /* what's new action  */
+.flex-align {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
 .action-block {
     border: 1px solid var(--clr-border);
     border-radius: .5rem;
@@ -250,8 +274,14 @@ img {
     .new-action {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
 }
 
+@media (min-width: 80rem) {
+    .half-description {
+        max-width: 50%;
+    }
+}
 
 /* level up  */
 .level-up,
@@ -260,20 +290,42 @@ img {
     border-radius: 0.5rem;
 }
 
+.grid-full-width {
+    grid-column: 1/-1;
+}
 
+.level-up-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.level-up-bottom {
+    grid-row: 2/3;
+}
 
 /* start selling  */
 .start-selling {
     margin-bottom: 4rem;
 }
 
+.marketing-button {
+    /* background-color: var(--clr-background); */
+    border: 1px solid var(--clr-border);
+    padding: 0.5rem 1rem 1rem 1rem;
+    border-radius: 0.5rem;
+    max-width: fit-content;
+    box-shadow: inset 0 -0.5rem 0 0 var(--clr-btn-hover);
+}
 
+.marketing-button:hover {
+    /* background-color: var(--clr-btn-hover); */
+    box-shadow: inset 0 -0.2rem 0 0 var(--clr-btn-hover);
+}
 
-
-
-
-
-
+.marketing-button:hover .marketing-button-inner {
+    transform: translateY(0.3rem);
+}
 
 
 
