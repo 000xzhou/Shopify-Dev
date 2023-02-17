@@ -296,12 +296,19 @@ img {
 
 .level-up-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
 
-.level-up-bottom {
-    grid-row: 2/3;
+@media (min-width: 50rem) {
+    .level-up-grid {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .level-up-bottom {
+        grid-row: 2/3;
+    }
+
 }
 
 /* start selling  */
