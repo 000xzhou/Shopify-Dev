@@ -131,7 +131,16 @@ body {
     }
 }
 
+.sections {
+    max-width: 1300px;
+    margin: auto;
+}
+
 /* hero area */
+.hero-section {
+    background-color: var(--clr-box-bg);
+}
+
 .hero-header {
     color: var(--clr-link);
     width: var(--fw-800);
